@@ -124,6 +124,7 @@ class ActionWishme(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
             print("Entered Wishme action")
             dispatcher.utter_message(text=wishMe())
+
 class ActionFaceRecognition(Action):
 
     def name(self) -> Text:
@@ -137,22 +138,25 @@ class ActionFaceRecognition(Action):
                person, confidence =  face_recongizer()
             except Exception as e:
                 print("Exception: ", e)
-            if int(confidence) > 50:
-                if person == 'OTHERS':
-                    speak('You seem new to me')
-                    speak('Do you want to save your face?')
-                    user_choice = listen()
-                    if user_choice.lower() == 'yes':
-                        speak("Please provide a name")
-                        name = listen()
-                        create_training_image_folder(name, 10)
-                    dispatcher.utter_message(text = 'Thankyou')
-                    #Training the new images(will look for time constraints)
-                    os.system('cmd /k "python -m training.train -d "images""')
+            try:
+                if int(confidence) > 50:
+                    if person == 'OTHERS':
+                        speak('You seem new to me')
+                        speak('Do you want to save your face?')
+                        user_choice = listen()
+                        if user_choice.lower() == 'yes':
+                            speak("Please provide a name")
+                            name = listen()
+                            create_training_image_folder(name, 10)
+                        dispatcher.utter_message(text = 'Thankyou')
+                        #Training the new images(will look for time constraints)
+                        os.system('cmd /k "python -m training.train -d "images""')
+                    else:
+                        dispatcher.utter_message(text=person)
                 else:
-                    dispatcher.utter_message(text=person)
-            else:
-                dispatcher.utter_message('Unable to detect faces clearly')
+                    dispatcher.utter_message('Unable to detect faces clearly')
+            except Exception as e:
+                print("Exception: ", e)
             
             
             
