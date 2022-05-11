@@ -1,0 +1,93 @@
+date,time,query,response
+2022-04-15,23:31:15,entered,entered
+2022-04-15,23:35:29,entered,entered
+2022-04-16,11:06:15,entered,entered
+2022-04-16,11:07:11,hello,Hello
+2022-04-16,11:07:43,current time?,Current Time: 11: 07
+2022-04-16,11:09:14,hello,Welcome sir
+2022-04-16,11:15:24,entered,entered
+2022-04-16,11:15:30,hello,Hi there
+2022-04-16,11:15:45,what is yesterday's date?,"Yesterday's Date: Friday, 2022-04-15 11:15:45.774739"
+2022-04-16,11:26:38,entered,entered
+2022-04-16,11:26:42,hello,Hey
+2022-04-16,11:29:08,entered,entered
+2022-04-16,11:29:51,hello,Hello sir
+2022-04-16,11:36:27,entered,entered
+2022-04-16,11:36:34,hello,Hello sir
+2022-04-16,11:37:03,detect object,person
+2022-04-16,11:37:26,what is weather in pune,Temperature: 308.18 Pressure: 1008 Humidity: 13 Description: clear sky
+2022-04-16,13:26:34,entered,entered
+2022-04-16,13:29:23,entered,entered
+2022-04-16,13:29:29,hello,Hey! How are you?
+2022-04-16,13:31:15,entered,entered
+2022-04-16,13:32:05,entered,entered
+2022-04-16,13:33:27,entered,entered
+2022-04-16,13:37:11,entered,entered
+2022-04-16,13:37:18,hello,Hey! How are you doing?
+2022-04-16,13:37:39,read it for me,Text: None
+2022-04-17,18:47:03,entered,entered
+2022-04-17,18:47:45,entered,entered
+2022-04-17,18:47:51,entered,entered
+2022-04-17,18:48:08,entered,entered
+2022-04-17,18:48:27,entered,entered
+2022-04-17,18:49:11,entered,entered
+2022-04-17,18:51:06,entered,entered
+2022-04-17,18:52:23,entered,entered
+2022-04-17,18:53:26,entered,entered
+2022-04-17,18:55:30,entered,entered
+2022-04-17,18:59:19,entered,entered
+2022-04-17,18:59:30,hello,"Hi there, how can I help"
+2022-04-17,18:59:53,what's the,"Sorry, I didn't get that. Can you please rephrase it?"
+2022-04-17,19:00:12,what's the current time,Current Time: 19: 00
+2022-04-17,19:00:28,what ipl matches today,"Searching for today, Check Your Browser"
+2022-04-17,19:00:46,hello,Welcome sir
+2022-04-17,19:00:56,thank you for you are free,I am your personal assistant.
+2022-04-17,19:01:10, ,"Sorry, I didn't get that. Can you please rephrase it?"
+2022-04-17,19:01:18,bye,See you later!
+2022-05-04,22:51:51,entered,entered
+2022-05-04,22:52:18,hello,Hey! How are you?
+2022-05-04,22:52:39, ,"Sorry, I didn't get that. Can you please rephrase it?"
+2022-05-04,22:52:49,no,What else sir ?
+2022-05-04,22:53:17, ,"Sorry, I didn't get that. Can you please rephrase it?"
+2022-05-04,22:53:29,ok thanks,Anything else sir ?
+2022-05-04,22:54:00,what is in front of,person
+2022-05-05,16:56:09,entered,entered
+2022-05-05,16:57:21,entered,entered
+2022-05-05,17:02:23,entered,entered
+2022-05-05,17:06:32,entered,entered
+2022-05-05,17:06:49,hello hello hello,Hello
+2022-05-05,17:07:17,tell me today's date,"Today's Date: Thursday, 2022-05-05 17:07:06.701531"
+2022-05-05,17:07:47,current updates,1. Four SpaceX Crew-3 astronauts start journey back to Earth from International Space Station - WION
+2022-05-05,17:07:54,current updates,2. Astronomers identify new ‘black widow’ system with a cannibalistic pulsar - The Indian Express
+2022-05-05,17:08:00,current updates,3. WhatsApp starts rolling out new Reactions feature update to all users - BGR India
+2022-05-05,17:08:10,current updates,4. NASA releases sonification of NGC 1275 and Messier 87 supermassive black holes - News9 LIVE
+2022-05-05,17:08:19,current updates,"5. Nothing Phone (1) launch date revealed? Carl Pei teases date, but is it real? - 91mobiles"
+2022-05-05,17:08:50, ,"Sorry, I didn't get that. Can you please rephrase it?"
+2022-05-05,17:09:58, ,"Sorry, I didn't get that. Can you please rephrase it?"
+2022-05-05,17:17:01,entered,entered
+2022-05-05,17:27:50,entered,entered
+2022-05-05,17:28:14,hello,Hi
+2022-05-05,17:28:53,who is the longest,"This is a list of the longest-reigning monarchs of all time, detailing the monarchs and lifelong leaders who have reigned the longest in world history, sorted by length of reign. Currently reigning monarchs are highlighted in green color."
+2022-05-05,17:29:06,who is the longest,"
+== Monarchs of sovereign states with verifiable reigns by exact date ==
+Twenty-five longest-reigning monarchs of states that were internationally recognized as sovereign for most or all of their reign."
+2022-05-05,17:29:09,who is the longest,Check your browser for the results
+2022-05-05,17:29:34, ,"Sorry, I didn't get that. Can you please rephrase it?"
+2022-05-05,17:29:56, ,"Sorry, I didn't get that. Can you please rephrase it?"
+2022-05-10,14:37:32,entered,entered
+2022-05-10,14:40:57,entered,entered
+2022-05-10,14:46:45,entered,entered
+2022-05-10,14:49:12,entered,entered
+2022-05-11,17:13:12,entered,entered
+2022-05-11,17:18:15,entered,entered
+2022-05-11,17:22:22,entered,entered
+2022-05-11,17:46:31,entered,entered
+2022-05-11,17:46:47,hello,Hello
+2022-05-11,17:47:03,how you doing,"just, analyzing the data ,what about you ?"
+2022-05-11,17:47:15,nothing,what's the plan now?
+2022-05-11,17:47:28,nothing,what else can I do for you?
+2022-05-11,17:48:01, ,"Sorry, I didn't get that. Can you please rephrase it?"
+2022-05-11,17:48:42,what is the full form of mun,person
+2022-05-11,17:48:59, ,"Sorry, I didn't get that. Can you please rephrase it?"
+2022-05-11,17:49:39,entered,entered
+2022-05-11,17:50:08,hello,Hey

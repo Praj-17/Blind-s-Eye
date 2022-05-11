@@ -1,0 +1,75 @@
+version: "2.0"
+
+rules:
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat
+- rule: tell time when asked
+  steps:
+  - intent: time
+  - action: action_tell_time
+- rule: tell date when asked
+  steps:
+  - intent: date
+  - action: action_tell_date
+- rule: search on wikipedia when asked
+  steps:
+  - intent: search_wikipedia
+  - action: action_search_wikipedia
+- rule: Google search when asked
+  steps:
+  - intent: google_search
+  - action: action_google_search
+- rule: Fetch News from Wolfram and tell first five of them when asked
+  steps:
+  - intent: tell_news
+  - action: action_tell_news
+- rule: Search a particular keyword on youtube 
+  steps:
+  - intent: play_on_youtube
+  - action: action_play_on_youtube
+- rule: Set alarm for a give time and time zone
+  steps:
+  - intent: set_alarm
+  - action: action_set_alarm
+- rule: Tell a joke when asked
+  steps:
+  - intent: tell_joke
+  - action: action_tell_joke
+- rule: tell weather by spotting the city when asked
+  steps:
+  - intent: tell_weather
+  - action: action_tell_weather
+- rule: start object detection when asked
+  steps:
+  - intent: object_detection
+  - action: action_object_detection
+- rule: start navigation when asked
+  steps:
+  - intent: navigation
+  - action: action_navigation
+- rule: welcome user
+  conversation_start: true 
+  steps:
+   - action: action_wishme
+- rule: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: action_fallback
+- rule: action detect landmark and tell addresss
+  steps:
+  - intent: landmark_detection
+  - action: action_tell_landmark_with_address
+- rule: action detect text from static images
+  steps:
+  - intent: text_detection
+  - action: action_detect_text
+- rule: action go for face recognition when asked
+  steps:
+  - intent: face_recognition
+  - action: action_face_recognition
+  
+
+  
+

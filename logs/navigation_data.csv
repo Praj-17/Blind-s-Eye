@@ -1,0 +1,202 @@
+Date,time,img_path,response
+2022-02-15,13:33:16,entered,entered
+2022-02-15,13:33:16,navigation_images\13.33.16_2022-02-15.png,Turn Left
+2022-02-15,13:33:19,entered,entered
+2022-02-15,13:33:19,navigation_images\13.33.19_2022-02-15.png,Turn Right
+2022-02-15,13:33:22,entered,entered
+2022-02-15,13:33:22,navigation_images\13.33.21_2022-02-15.png,Turn Left
+2022-02-15,13:33:24,entered,entered
+2022-02-15,13:33:24,navigation_images\13.33.23_2022-02-15.png,Turn Right
+2022-02-15,13:33:26,entered,entered
+2022-02-15,13:33:26,navigation_images\13.33.26_2022-02-15.png,Turn Right
+2022-02-15,13:33:28,entered,entered
+2022-02-15,13:33:28,navigation_images\13.33.28_2022-02-15.png,Turn Left
+2022-02-15,14:43:04,entered,entered
+2022-02-15,14:43:05,navigation_images\14.43.04_2022-02-15.png,Turn Left
+2022-02-15,14:43:08,entered,entered
+2022-02-15,14:43:08,navigation_images\14.43.08_2022-02-15.png,Go Straight
+2022-02-15,14:43:11,entered,entered
+2022-02-15,14:43:11,navigation_images\14.43.11_2022-02-15.png,Turn Right
+2022-02-15,14:43:14,entered,entered
+2022-02-15,14:43:14,navigation_images\14.43.13_2022-02-15.png,Turn Right
+2022-02-15,14:43:17,entered,entered
+2022-02-15,14:43:17,navigation_images\14.43.16_2022-02-15.png,Turn Right
+2022-02-15,14:43:19,entered,entered
+2022-02-15,14:43:19,navigation_images\14.43.19_2022-02-15.png,Turn Right
+2022-02-15,14:43:22,entered,entered
+2022-02-15,14:43:22,navigation_images\14.43.22_2022-02-15.png,Turn Right
+2022-02-15,14:43:25,entered,entered
+2022-02-15,14:43:25,navigation_images\14.43.24_2022-02-15.png,Turn Right
+2022-02-15,14:43:28,entered,entered
+2022-02-15,14:43:28,navigation_images\14.43.27_2022-02-15.png,Go Straight
+2022-02-15,14:43:31,entered,entered
+2022-02-15,14:43:31,navigation_images\14.43.30_2022-02-15.png,Turn Right
+2022-02-15,14:43:33,entered,entered
+2022-02-15,14:43:33,navigation_images\14.43.33_2022-02-15.png,Turn Right
+2022-02-15,14:43:36,entered,entered
+2022-02-15,14:43:36,navigation_images\14.43.35_2022-02-15.png,Turn Left
+2022-02-15,14:43:39,entered,entered
+2022-02-15,14:43:39,navigation_images\14.43.38_2022-02-15.png,Turn Right
+2022-02-15,14:43:42,entered,entered
+2022-02-15,14:43:42,navigation_images\14.43.41_2022-02-15.png,Turn Right
+2022-02-15,14:43:44,entered,entered
+2022-02-15,14:43:44,navigation_images\14.43.44_2022-02-15.png,Turn Right
+2022-02-15,14:43:47,entered,entered
+2022-02-15,14:43:47,navigation_images\14.43.46_2022-02-15.png,Turn Left
+2022-02-15,14:43:50,entered,entered
+2022-02-15,14:43:50,navigation_images\14.43.49_2022-02-15.png,Turn Right
+2022-02-15,14:43:53,entered,entered
+2022-02-15,14:43:53,navigation_images\14.43.52_2022-02-15.png,Turn Right
+2022-02-15,14:43:55,entered,entered
+2022-02-15,14:43:55,navigation_images\14.43.55_2022-02-15.png,Turn Right
+2022-02-15,14:54:25,entered,entered
+2022-02-15,14:55:36,entered,entered
+2022-02-15,15:18:49,entered,entered
+2022-02-15,15:18:49,navigation_images\15.18.48_2022-02-15.png,Turn Right
+2022-02-15,15:18:52,entered,entered
+2022-02-15,15:18:53,entered,entered
+2022-02-15,15:18:53,navigation_images\15.18.52_2022-02-15.png,Turn Left
+2022-02-15,15:18:55,entered,entered
+2022-02-15,15:18:55,navigation_images\15.18.55_2022-02-15.png,Turn Right
+2022-02-15,15:18:58,entered,entered
+2022-02-15,15:18:58,entered,entered
+2022-02-15,15:18:59,entered,entered
+2022-02-15,15:19:00,entered,entered
+2022-02-15,15:19:00,navigation_images\15.18.59_2022-02-15.png,Turn Left
+2022-02-15,15:19:02,entered,entered
+2022-02-15,15:19:03,entered,entered
+2022-02-15,15:19:03,entered,entered
+2022-02-15,15:19:03,navigation_images\15.19.03_2022-02-15.png,Turn Right
+2022-02-15,15:19:06,entered,entered
+2022-02-15,15:19:06,navigation_images\15.19.05_2022-02-15.png,Turn Left
+2022-02-15,15:19:08,entered,entered
+2022-02-15,15:19:09,entered,entered
+2022-02-15,15:19:09,navigation_images\15.19.08_2022-02-15.png,Turn Right
+2022-02-15,15:19:11,entered,entered
+2022-02-15,15:19:12,entered,entered
+2022-02-15,15:19:13,entered,entered
+2022-02-15,15:19:13,entered,entered
+2022-02-15,15:19:14,entered,entered
+2022-02-15,15:19:15,entered,entered
+2022-02-15,15:19:15,entered,entered
+2022-02-15,15:19:16,entered,entered
+2022-02-15,15:19:16,navigation_images\15.19.15_2022-02-15.png,Turn Left
+2022-02-15,15:19:18,entered,entered
+2022-02-15,15:19:18,navigation_images\15.19.18_2022-02-15.png,Turn Right
+2022-02-15,15:19:21,entered,entered
+2022-02-15,15:19:21,entered,entered
+2022-02-15,15:19:22,entered,entered
+2022-02-15,15:19:22,entered,entered
+2022-02-15,15:19:23,entered,entered
+2022-02-15,15:19:23,navigation_images\15.19.22_2022-02-15.png,Turn Left
+2022-02-15,15:21:30,entered,entered
+2022-02-15,15:21:30,navigation_images\15.21.29_2022-02-15.png,Turn Left
+2022-02-15,15:21:33,entered,entered
+2022-02-15,15:21:34,entered,entered
+2022-02-15,15:21:34,entered,entered
+2022-02-15,15:21:35,entered,entered
+2022-02-15,15:21:36,entered,entered
+2022-02-15,15:21:36,entered,entered
+2022-02-15,15:21:36,navigation_images\15.21.36_2022-02-15.png,Turn Right
+2022-02-15,15:21:39,entered,entered
+2022-02-15,15:21:39,navigation_images\15.21.38_2022-02-15.png,Turn Left
+2022-02-15,15:26:16,entered,entered
+2022-02-15,15:26:16,navigation_images\15.26.15_2022-02-15.png,Turn Right
+2022-02-15,15:26:20,entered,entered
+2022-02-15,15:26:21,entered,entered
+2022-02-15,15:26:22,entered,entered
+2022-02-15,15:26:23,entered,entered
+2022-02-15,15:26:24,entered,entered
+2022-02-15,15:26:26,entered,entered
+2022-02-15,15:26:26,navigation_images\15.26.25_2022-02-15.png,Turn Left
+2022-02-15,15:26:30,entered,entered
+2022-02-15,15:26:30,navigation_images\15.26.29_2022-02-15.png,Turn Right
+2022-02-15,15:26:33,entered,entered
+2022-02-15,15:26:34,entered,entered
+2022-02-15,15:26:35,entered,entered
+2022-02-15,15:26:36,entered,entered
+2022-02-15,15:26:37,entered,entered
+2022-02-15,15:26:37,navigation_images\15.26.36_2022-02-15.png,Turn Left
+2022-02-15,15:26:39,entered,entered
+2022-02-15,15:26:40,entered,entered
+2022-02-15,15:26:41,entered,entered
+2022-02-15,15:26:42,entered,entered
+2022-02-15,15:26:43,entered,entered
+2022-02-15,15:26:43,entered,entered
+2022-02-15,15:26:44,entered,entered
+2022-02-15,15:26:45,entered,entered
+2022-02-15,15:26:45,entered,entered
+2022-02-15,15:26:45,navigation_images\15.26.45_2022-02-15.png,Turn Right
+2022-02-15,15:26:48,entered,entered
+2022-02-15,15:26:48,navigation_images\15.26.47_2022-02-15.png,Turn Left
+2022-02-15,15:26:50,entered,entered
+2022-02-15,15:26:51,entered,entered
+2022-02-15,15:26:52,entered,entered
+2022-02-15,15:26:52,navigation_images\15.26.51_2022-02-15.png,Turn Right
+2022-02-15,15:26:54,entered,entered
+2022-02-15,15:26:54,navigation_images\15.26.53_2022-02-15.png,Turn Left
+2022-02-15,15:26:56,entered,entered
+2022-02-15,15:26:57,entered,entered
+2022-02-15,15:26:57,navigation_images\15.26.56_2022-02-15.png,Turn Right
+2022-02-15,15:26:59,entered,entered
+2022-02-15,15:26:59,navigation_images\15.26.59_2022-02-15.png,Turn Left
+2022-02-15,15:27:02,entered,entered
+2022-02-15,15:27:02,entered,entered
+2022-02-15,15:27:03,entered,entered
+2022-02-15,15:27:04,entered,entered
+2022-02-15,15:27:04,entered,entered
+2022-02-15,15:27:04,navigation_images\15.27.04_2022-02-15.png,Turn Right
+2022-02-15,15:27:07,entered,entered
+2022-02-15,15:27:07,entered,entered
+2022-02-15,15:27:08,entered,entered
+2022-02-15,15:27:08,navigation_images\15.27.07_2022-02-15.png,Turn Left
+2022-02-15,15:27:10,entered,entered
+2022-02-15,15:27:25,entered,entered
+2022-02-15,15:28:02,entered,entered
+2022-02-15,15:28:02,navigation_images\15.28.01_2022-02-15.png,Turn Left
+2022-02-15,15:28:04,entered,entered
+2022-02-15,15:28:05,entered,entered
+2022-02-15,15:28:06,entered,entered
+2022-02-15,15:28:07,entered,entered
+2022-02-15,15:28:07,entered,entered
+2022-02-15,15:28:07,navigation_images\15.28.07_2022-02-15.png,Turn Right
+2022-02-15,15:28:10,entered,entered
+2022-02-15,15:28:10,navigation_images\15.28.09_2022-02-15.png,Turn Left
+2022-02-15,15:28:12,entered,entered
+2022-02-15,15:28:12,navigation_images\15.28.12_2022-02-15.png,Turn Right
+2022-02-15,15:28:15,entered,entered
+2022-02-15,15:36:45,entered,entered
+2022-02-15,15:36:45,navigation_images\15.36.39_2022-02-15.png,Turn Right
+2022-02-15,15:37:09,entered,entered
+2022-02-15,15:37:09,navigation_images\15.37.04_2022-02-15.png,Turn Right
+2022-02-15,15:37:31,entered,entered
+2022-02-15,15:37:31,navigation_images\15.37.26_2022-02-15.png,Turn Right
+2022-02-15,15:38:24,entered,entered
+2022-02-15,15:38:24,navigation_images\15.38.20_2022-02-15.png,Turn Right
+2022-02-15,15:38:33,entered,entered
+2022-02-15,15:38:33,navigation_images\15.38.27_2022-02-15.png,Turn Left
+2022-02-15,15:38:41,entered,entered
+2022-02-15,15:38:41,navigation_images\15.38.35_2022-02-15.png,Turn Right
+2022-02-15,15:38:47,entered,entered
+2022-04-12,23:50:23,entered,entered
+2022-04-12,23:50:24,navigation_images\23.50.19_2022-04-12.png,Turn Right
+2022-04-13,00:21:21,entered,entered
+2022-04-13,00:21:22,navigation_images\00.21.15_2022-04-13.png,Turn Right
+2022-04-13,00:21:28,entered,entered
+2022-04-13,00:26:24,entered,entered
+2022-04-13,00:26:25,navigation_images\00.26.21_2022-04-13.png,Turn Right
+2022-04-13,00:26:29,entered,entered
+2022-04-13,00:26:33,entered,entered
+2022-04-13,00:26:37,entered,entered
+2022-04-13,00:26:41,entered,entered
+2022-04-13,00:32:12,entered,entered
+2022-04-13,00:32:13,navigation_images\00.32.07_2022-04-13.png,Turn Left
+2022-04-13,00:42:27,entered,entered
+2022-04-13,00:42:28,navigation_images\00.42.21_2022-04-13.png,Turn Right
+2022-04-13,13:46:10,entered,entered
+2022-04-14,13:12:08,entered,entered
+2022-04-14,13:12:09,logs/navigation_images\13.12.02_2022-04-14.png,Turn Left
+2022-04-14,13:16:43,entered,entered
+2022-04-14,13:16:44,logs/navigation_images\13.16.38_2022-04-14.png,Turn Right
+2022-04-14,14:38:25,entered,entered
+2022-04-14,14:38:25,logs/navigation_images\14.38.23_2022-04-14.png,Turn Right

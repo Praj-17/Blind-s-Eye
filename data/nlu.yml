@@ -1,0 +1,597 @@
+version: "2.0"
+
+nlu:
+- intent: chitchat/greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: chitchat/goodbye
+  examples: |
+    - cu
+    - good bye
+    - cee you later
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - have a great time
+    - that was fun
+    - quit
+    - stop
+    - exit
+- intent: chitchat/happy_mood
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: chitchat/unhappy_mood
+  examples: |
+    - my day was horrible
+    - I don't feel very well
+    - I am disappointed
+    - I'm so sad
+    - feeling unhappy
+    - worst day of my life 
+    - got panic
+    - feeling bored
+    - stressed
+    - I am so angry
+    - I am so depressed
+    - I am so tensed
+    - not good
+- intent: chitchat/bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - what is your name?
+    - what is your purpose?
+    - How can you help me?
+    - What are you here for?
+- intent: chitchat/ask_residence
+  examples: |
+    - where do you live?
+    - where do you live in?
+    - whats your residence?
+    - your city?
+    - your town?
+    - where is your house?
+    - where is your home?
+    - wheres your house?
+    - wheres your home?
+    - where is your residence?
+    - whats your home town?
+    - where do you stay?
+    - where are you from?
+    - where are we staying?
+- intent: chitchat/casual_query
+  examples: |
+    - how are you?
+    - how is it going?
+    - what is up ?
+    - is everything all right?
+    - what is going on ?
+    - you fine?
+    - you all right?
+    - how is it going on 
+    - what are you doing ?
+    - wattcha doing?
+    - what are you up to?
+    - how you doing?
+    - how are you doing?
+- intent: tell_details
+  examples: |
+    - My name is [Rasa](name)
+    - I am [Prajwal](name)
+    - myself [Aishu](name)
+    - [Sarthak](name) is my name
+    - [Sarthak](name) here
+    - [abhi](name) here.
+    - [abhi](name) is my name
+- intent: chitchat/affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - that's right
+    - sure
+    - fine
+    - ok
+    - okay
+    - alright
+    - absolutely
+- intent: chitchat/deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - not at all
+    - not right now
+    - nope
+    - no 
+    - not so sure
+    - impossible
+- intent: time
+  examples: |
+    - what is the time?
+    - what time is it?
+    - what is the current time?
+    - what hour is it?
+    - what is the time now?
+    - current time please?
+    - can you tell me the current time please
+    - would you mind telling me the current time please?
+    - what time can i expect now?
+    - what time can i expect?
+    - what time is it now?
+    - what might be the approximate time?
+    - what o'clock is it?
+- intent: tell_news
+  examples: |
+    - What is the latest news?
+    - What is going on in the world?
+    - tell me some news please?
+    - would you mind telling me some news please?
+    - what is new today?
+    - can you please update me?
+    - what's the latest podcast?
+    - anything new going on?
+    - latest news please
+    - what's the latest news?
+    - current status of the world please?
+    - news bulletin please?
+    - tell me some headlines
+    - news headlines
+    - higlghts please
+    - what are today's highlights
+    - report today's status
+    - report headlines
+    - report hilights
+    - report me the news bulletin
+- intent: date
+  examples: |
+    - what is the date [today](day)?
+    - what date is it?
+    - what is the [current](day) date?
+    - which day is [tomorrow] (day)?
+    - what is the date [tomorrow] day?
+    - [current](day) date please?
+    - [current](day)date please?
+    - can you tell me the [current](day) date please
+    - would you mind telling me [yesterday](day)  date please?
+    - what day can i expect [today](day)?
+    - which day was [yesterday](day)?
+    - what date was [yesterday](day)?
+    - what date is it [today](day)?
+    - which day is [tomorow](day)?
+    - what is [tomorrow](day)'s date?
+- intent: search_wikipedia
+  examples: |
+    - who is [Elon Musk](search_item)?
+    - what is [photosynthesis](search_item)?
+    - what do you mean by [Rasa](search_item)?
+    - What is the meaning of [Web developement](search_item)?
+    - who are the [akatsuki](search_item)?
+    - Tell me about [russia](search_item)?
+    - Explain [uno](search_item)?
+    - search for [github](search_item)?
+    - gather information on [animals](search_item)?
+    - describe [World War](search_item)?
+    - inform me about [WHO](search_item)?
+    - something about [DBMS](search_item)?
+    - meaning of [plant kingdom](search_item)?
+    - wikipedia [search_item](search_item)?
+    - would you mind telling me about [hostel sysytem in india](search_item)?
+    - who is [rasputin](search_item)?
+    - what is [war](search_item)?
+    - what do you mean by [automobile industry](search_item)?
+    - What is the meaning of [bacteria](search_item)?
+    - who are the [villians in star wars](search_item)?
+    - Tell me about [Pakistan PM](search_item)?
+    - Explain the [chemical formula for NACL](search_item)?
+    - search for [Kruskal's algorithm](search_item)?
+    - gather information on [Trading](search_item)?
+    - describe what is [heaven](search_item)?
+    - inform me about [recent job opennings](search_item)?
+    - something about [government policies](search_item)?
+    - meaning of [procastination](search_item)?
+    - wikipedia [virat kohli](search_item)?
+    - who is [zelenski](search_item)?
+    - what is [retardation](search_item)?
+    - what do you mean by [democracy](search_item)?
+    - What is the meaning of [API](search_item)?
+    - who are the [terrorists](search_item)?
+    - Tell me about [geometry](search_item)?
+    - Explain [trignometry](search_item)?
+    - search for difference between  [this and that](search_item)?
+    - gather information on [indian dresses](search_item)?
+    - describe [indian culture](search_item)?
+    - inform me about [bomb blasts](search_item)?
+    - something about [the great barrier reef](search_item)?
+    - meaning of [pesticides](search_item)?
+    - wikipedia [something important](search_item)?
+    - who is [laden](search_item)?
+    - what is [Taliban](search_item)?
+    - what do you mean by [temple](search_item)?
+    - What is the meaning of [prayer](search_item)?
+    - who are the [mosad](search_item)?
+    - Tell me about [RAW agency](search_item)?
+    - Explain why [aishu married prajwal](search_item)?
+    - search for best [dresses to wear in a wedding](search_item)?
+    - gather information on [interview tips](search_item)?
+    - describe how to find the [hamiltonian paths](search_item)?
+    - inform me about [charecter development of SASUKE](search_item)?
+    - something about [electricity bills in india](search_item)?
+    - meaning of [vapourisation](search_item)?
+    - wikipedia [MS Dhoni](search_item)?
+    - who is [krishna](search_item)?
+    - what is [sri lanka](search_item)?
+- intent: google_search
+  examples: |
+    - google what is the[mean of 5 and 3](search_item)
+    - search who won the [last IPL match](search_item)
+    - search [Telephone](search_item) on google
+    - find [Normalization](search_item) on google
+    - google for [Normal distributuin](search_item)
+    - search about [Narendra modi](search_item)
+    - search for [obama](search_item)
+    - google it What is the difference between [tcp and udp](search_item)
+    - state the Formula for[variance](search_item)
+    - explain Formula for[standard deviation](search_item)
+    - describe the process [Rendering](search_item)
+    - google what is the [variance of Normal Distribution](search_item)
+    - tell me why do we [not cut nails at night](search_item)
+    - explain the concept of  [Suicide](search_item)
+    - google [something to search](search_item)
+    - search [optimisations](search_item)
+    - search [laptops](search_item) on google
+    - find [broadcasting](search_item) on google
+    - google for [compound interest](search_item)
+    - search about [telenganna](search_item)
+    - search for [AVL Trees](search_item)
+    - google it [meaning of bibliophile](search_item)
+    - state the difference between[process and thread](search_item)
+    - explain [statistics and datascience](search_item)
+    - describe the [state of art](search_item)
+    - google name of [guitar strings](search_item)
+    - tell me some common [superstitions in india](search_item)
+    - explain the concept of  [teleporting](search_item)
+    - google [machine learnig](search_item)
+    - search use of [Natural Language processing](search_item)
+    - search [Potassium chemical formula](search_item) on google
+    - find [Itachi uchiha](search_item) on google
+    - google for [Ipl match tomorrow](search_item)
+    - search about [johny dep](search_item)
+    - search for [parikshit mahalle](search_item)
+    - google it Which is better [TCS or infosys](search_item)
+    - state the use of [adroid studio in APP developement](search_item)
+    - explain the process [respiration](search_item)
+    - describe the [get and post methods in REST API](search_item)
+    - google [rab ne banadi jodi](search_item)
+    - tell me why[katappa killed bahubali](search_item)
+    - explain the concept of  [shelling](search_item)
+    - google [practical implementaion of school knowledge](search_item)
+    - search [tabelfans](search_item)
+    - search [absoulutely anything](search_item) on google
+    - find [iterations](search_item) on google
+    - google for [stack and queue definations](search_item)
+    - search about [chinese food](search_item)
+    - search for [b+ trees and spaly trees](search_item)
+    - google it distance between [karnataka and sri lanka](search_item)
+    - state the location of[peru](search_item)
+    - explain why we should not[eat opposite food](search_item)
+    - describe the art of [cooking](search_item)
+    - google good [schools](search_item)near me
+    - tell me which is the[closest hotel](search_item)near me
+    - explain the concept of  [Magic](search_item)
+    - Who discovered  [internet](search_item)?
+- intent: play_on_youtube
+  examples: |
+    - play [mere rashke qamar](search_item)
+    -play[Gooddays](search_item) on youtube
+    -want some[party]music(search_item) on youtube
+    -play trending[music](search_item)  on youtube
+    -play latest[songs](search_item)
+    -play [arjit singh] songs(search_item)
+    -can we have some [party songs](search_item)
+    -lets play some [silent song](search_item)
+    -play [best songs](search_item) on youtube
+- intent: set_alarm
+  examples: |
+    - set an alarm  for [5:00](alarm_time)[pm](alarm_time_zone)
+    - wake up me at [6:00](alarm_time)[am](alarm_time_zone)
+    - ring an alarm on [7 O'clock](alarm_time)[pm](alarm_time_zone)
+    - remind me to go at [10:30](alarm_time)[am](alarm_time_zone)
+    - add reminder of [seven](alarm_time)[am](alarm_time_zone)
+    - place alarm of (12:25)(alarm_time)[pm](alarm_time_zone)
+    - alarm me at [8:00](alarm_time)[am](alarm_time_zone)
+    - ring bell on [7:50](alarm_time)[pm](alarm_time_zone)
+    - set an alarm  for [5:00](alarm_time) in [evening](alarm_time_zone)
+    - wake up me at [6:00](alarm_time)[morning](alarm_time_zone)
+    - ring an alarm on [7 O'clock](alarm_time)at [lunch time](alarm_time_zone)
+    - remind me to go at [10:30](alarm_time) in [dinner time](alarm_time_zone)
+    - add reminder of [seven](alarm_time)at the time of  [breakfast](alarm_time_zone)
+    - place alarm of (12:25)(alarm_time) at [midnight](alarm_time_zone)
+    - alarm me at [8:00](alarm_time) at [bed time](alarm_time_zone)
+    - ring bell on [7:50](alarm_time) at [night](alarm_time_zone)
+- intent: tell_joke
+  examples: |
+    - tell me a joke
+    - tell me a funny joke
+    - do you have a joke for me
+    - amuse me
+    - make me laugh
+    - i am feeling sad
+    - tell a joke
+    - entertain me
+    - do you have something funny?
+    - can you amaze me?
+    - can you do somthing funny?
+    - lets have some fun 
+    - what about having a joke?
+- intent: object_detection
+  examples: |
+    - show me what is ahead 
+    - what is infront of me
+    - what do i see
+    - what is in front of me
+    - narrate the world to me
+    - watch what is ahead
+    - obeserve the world for me
+    - show me what is in front of me
+    - show me what is in front of me
+    - examine the area around
+    - justify the outside state
+    - find out what is in front of me
+    - inform me about the outside
+    - look outside for me
+    - look outside
+    - look around
+    - look at the outside
+    - start the camera
+    - detect objects for mr
+    - predict what is infront of me
+    - predict what is ahead
+    - tell me what is ahead
+    - tell me what is infront of me
+    - would you mind telling me what is infront of me
+    - it would be my pleasure to know what is around me
+    - narrate the outside world me
+    - please tell me what is around me
+    - please narrate the outside world to me
+- intent: tell_weather
+  examples: |
+    - is it hot in [bucha](city)
+    - is it cold in [kiv](city)
+    - is it raining in [kharkiv](city)
+    - is it snowing in [mariupol](city)
+    - what is the weather in [chernihiv](city)
+    - tell me the weather in [makiivka](city)
+    - how is the weather in [luhansk](city)
+    - what about the weather in [sevastopol](city)
+    - check weather in [mykolaiv](city)
+    - how is the sky at [kherson](city)
+    - do i need to carry an umbrella in [zaporizhzhia](city)
+    - tell me the temperature of [donetsk](city)
+    - find me the temperature of [dnipro](city)
+    - will it rain today in [odessa](city)
+    - i live in [pune](city)
+    - my address is [mumbai](city)
+    - i reside in [delhi](city)
+    - my residence is [chennai](city)
+    - I stay in [kolkata](city)
+    - my city is [japan](city)
+    - my town in [russia](city)
+    - my village in [thane](city)
+    - [dehradun](city) is my residnece
+    - weather of [jhelum](city)
+    - weather at [korba](city)
+    - conditions at [mysore](city)
+    - rain in [austria](city)
+- intent: navigation
+  examples: |
+    - show me the way
+    - guide me
+    - navigate me
+    - show me the route
+    - show me the directions
+    - track the road
+    - examine the road ahead
+    - tell me the way
+    - show me the way ahead
+    - what is the route
+    - is there any vehicle in front of me
+    - is there any vehicle behind me
+    - is there any vehicle in around me
+- intent: landmark_detection
+  examples: |
+    - show me the landmark
+    - show me the landmark in front of me
+    - show me the landmark behind me
+    - show me the landmark in the front
+    - show me the landmark in the back
+    - show me the landmark in the left
+    - show me the landmark in the right
+    - where am I
+    - where are we
+
+- intent: text_detection
+  examples: |
+    - show me the text
+    - read the text in front of me
+    - read the text behind me
+    - read
+    - please read me the ext
+    - read this
+    - can you please read this
+    - would you mind reading it please
+    - please read me the text.
+- intent: face_recognition
+  examples: |
+    - who is before me 
+    - who is it?
+    - who is behind me?
+    - which person is this?
+    - who is before me?
+    - whom do I see?
+    - whom do you see?
+    - is she my daughter?
+   
+
+
+  
+- intent: out_of_scope
+  examples: |
+    - !%!#
+    - %@^
+    - qihnqa
+    - nnnqnvbqhqnq
+    - pppppppppppp
+    - !^!&!&14
+    - 3627
+    - !^!&!&
+    - 42724
+    - !#^!&&1727
+    - blah blah blah
+
+- synonym: today
+  examples: |
+    - current date
+    - today
+    - now
+- synonym: yesterday
+  examples: |
+    - the other day
+    - last day
+- synonym: tomorrow
+  examples: |
+    - day after
+    - next day
+- synonym: song 
+  examples: |
+    - music
+    - songs
+    - lyrics
+    - tune
+    - ringtone
+    - theme song
+    - theme
+- synonym: am
+  examples: |
+    - in the morning
+    - morning
+    - early morning
+    - midnight
+    - breakfast time
+    - wake up time
+    - after midnight
+- synonym: pm
+  examples: |
+    - in the evening
+    - evening
+    - late evening
+    - night
+    - bed time
+    - sleep time
+    - late night
+    - afternoon
+    - noon
+    - snack time
+    - lunch time
+- synonym: raod
+  examples: |
+    - path
+    - way
+    - street
+    - road
+    - route
+    - highway
+    - expressway
+    - avenue
+    - boulevard
+- synonym: show
+  examples: |
+    - display
+    - guide
+    - watch
+    - observe
+    - look
+    - see
+    - glare
+    - stare
+    - glimpse
+- synonym: traffic
+  examples: |
+    - car
+    - bike
+    - truck
+    - bus
+    - train
+    - airplane
+    - ship
+    - trafficlight
+    - trafficsignal
+    - trafficjam
+    - scooty
+    - scooter
+    - bicycle
+- synonym: landmark
+  examples: |
+    - place
+    - loaction
+    - landmark
+    - memorial
+    - monument
+- synonym: front
+  examples: |
+    - infront
+    - back
+    - rear
+    - ahead
+    - behind
+    - beneath
+    - below
+    - left
+    - right
+    - before
+    - after
+
+
+
+
+
+
+
+
