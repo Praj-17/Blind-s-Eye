@@ -3,8 +3,6 @@ import cv2
 import os, shutil
 from DataBuilder.augmentation import Augmentation
 
-
-
 class Data_builder:
     def __init__(self, name):
         self.name = name
@@ -35,13 +33,13 @@ class Data_builder:
             cv2.destroyAllWindows()
     def augment(self, n):
         Augmentation(f"{self.path}\\",f"{self.path}\\","aug",n)
-    def Split(self):
+    def Split(self, train_size = 0.8, ):
 
         images = [f for f in os.listdir(self.path) if os.path.isfile(os.path.join(self.path, f))]
         images_train = []
         count = 0
         for img in images:
-            if count ==  (int(len(images)*0.8)+1):
+            if count ==  (int(len(images)*train_size)+1):
                break
             images_train.append(img)
             images.remove(img)

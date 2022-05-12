@@ -136,21 +136,23 @@ class ActionFaceRecognition(Action):
             print("Entered Face Recognition action")
             try:
                person, confidence =  face_recongizer()
+               print("Person: ", person)
+               print("Confidence: ", confidence)
             except Exception as e:
                 print("Exception: ", e)
             try:
-                if int(confidence) > 50:
+                if int(confidence) > 30:
                     if person == 'OTHERS':
                         speak('You seem new to me')
                         speak('Do you want to save your face?')
-                        user_choice = listen()
+                        user_choice = input('say "YES" or "NO"')
                         if user_choice.lower() == 'yes':
                             speak("Please provide a name")
-                            name = listen()
+                            name = input('Enter your name')
                             create_training_image_folder(name, 10)
-                        dispatcher.utter_message(text = 'Thankyou')
                         #Training the new images(will look for time constraints)
-                        os.system('cmd /k "python -m training.train -d "images""')
+                            os.system('start cmd /k start\\face_training.cmd')
+                            dispatcher.utter_message(text = f'Thankyou {name}')
                     else:
                         dispatcher.utter_message(text=person)
                 else:
