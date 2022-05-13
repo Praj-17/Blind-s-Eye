@@ -1,14 +1,38 @@
 1. create a conda envinoment
 2. activate the conda envirnoment and run the following lines.
 - conda install python==3.8
-- conda install tensorflow-gpu
-- pip install rasa==2.8
-- pip install -r requirements.txt
-- pip3 install rasa-x --extra-index-url https://pypi.rasa.com/simple
+- conda env create -f environment.yml
+- pip install PyAudio-0.2.11-cp38-cp38-win_amd64.whl
 - install the pytesseract aplication at the default location (C:\Program Files\Tesseract-OCR)
 the file is given at YOLO/Tesseract... run the .exe to install the application.
 
 Note that your setup has been done properly and I expect there wont be any errors if you proceed the recommemded steps.
+
+
+----------------NEW in version 2.0------------------------
+
+1. Face Recogniton using MTCNN(better than all those shown earlier)
+2. Repeat Functionality
+3. Increased Speed
+4. Fixed many bugs
+5. Named it Disha(changable)
+6. Added the wake-up word (disha) need to call it when she is at standby (she goes in standby every 10 secs of silence)
+7. Removed the SerpAPI thing (used for auto_correct but it was taking a lot of time)
+8. Make sure you use different API ids everywhere
+
+
+9. - 
+1. as a shortcut to the starup procedure written below i have created cmd files that help doing the same task 
+2. Go to the start.py file and execute it, it should do all the required things within the terminals and after 2 mins the bot shall start.
+3. If you added any intent or need to re-train rasa, run the train_rasa.py file to train rasa model
+
+
+
+
+
+
+---------------------------------------------------Starting the bot----------------------------------------
+
 
 Now to make your application run or talk to your bot you must do the following things:
 

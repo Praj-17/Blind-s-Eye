@@ -89,6 +89,7 @@ nlu:
     - where do you stay?
     - where are you from?
     - where are we staying?
+
 - intent: chitchat/casual_query
   examples: |
     - how are you?
@@ -104,6 +105,21 @@ nlu:
     - what are you up to?
     - how you doing?
     - how are you doing?
+  
+- intent: repeat
+  examples: |
+    - repeat
+    - repeat that please
+    - say that again please
+    - repeat that again
+    - what did you say?
+    - did you say something?
+    - couldn't understand that.
+    - i don't understand.
+    - what?
+    - what was that?
+    - please repeat that
+
 - intent: tell_details
   examples: |
     - My name is [Rasa](name)
@@ -180,6 +196,7 @@ nlu:
     - report headlines
     - report hilights
     - report me the news bulletin
+
 - intent: date
   examples: |
     - what is the date [today](day)?
@@ -197,6 +214,7 @@ nlu:
     - what date is it [today](day)?
     - which day is [tomorow](day)?
     - what is [tomorrow](day)'s date?
+
 - intent: search_wikipedia
   examples: |
     - who is [Elon Musk](search_item)?
@@ -317,6 +335,7 @@ nlu:
     - tell me which is the[closest hotel](search_item)near me
     - explain the concept of  [Magic](search_item)
     - Who discovered  [internet](search_item)?
+
 - intent: play_on_youtube
   examples: |
     - play [mere rashke qamar](search_item)
@@ -328,6 +347,7 @@ nlu:
     -can we have some [party songs](search_item)
     -lets play some [silent song](search_item)
     -play [best songs](search_item) on youtube
+  
 - intent: set_alarm
   examples: |
     - set an alarm  for [5:00](alarm_time)[pm](alarm_time_zone)
@@ -346,6 +366,7 @@ nlu:
     - place alarm of (12:25)(alarm_time) at [midnight](alarm_time_zone)
     - alarm me at [8:00](alarm_time) at [bed time](alarm_time_zone)
     - ring bell on [7:50](alarm_time) at [night](alarm_time_zone)
+
 - intent: tell_joke
   examples: |
     - tell me a joke
@@ -361,6 +382,7 @@ nlu:
     - can you do somthing funny?
     - lets have some fun 
     - what about having a joke?
+
 - intent: object_detection
   examples: |
     - show me what is ahead 
@@ -391,6 +413,7 @@ nlu:
     - narrate the outside world me
     - please tell me what is around me
     - please narrate the outside world to me
+
 - intent: tell_weather
   examples: |
     - is it hot in [bucha](city)
@@ -420,6 +443,7 @@ nlu:
     - weather at [korba](city)
     - conditions at [mysore](city)
     - rain in [austria](city)
+
 - intent: navigation
   examples: |
     - show me the way
@@ -467,7 +491,7 @@ nlu:
     - who is before me?
     - whom do I see?
     - whom do you see?
-    - is she my daughter?
+    - whom do you see in front of me?
    
 
 

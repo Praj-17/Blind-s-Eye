@@ -69,10 +69,11 @@ def listen():
         r = sr.Recognizer()
         with sr.Microphone() as source:
             print("Listening...")
-            r.pause_threshold = 1.2
+            r.pause_threshold = 2.5 # seconds of non-speaking audio before a phrase is considered complete
+            
             r.non_speaking_duration =0.3
-            r.energy_threshold = 340
-            audio = r.listen(source, phrase_time_limit= 6)
+            r.energy_threshold = 320 # it is a threshold for the energy level of the audio
+            audio = r.listen(source)  #phrase_time_limit= 6
         
             
         try:

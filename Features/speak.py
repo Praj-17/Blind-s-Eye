@@ -3,7 +3,8 @@ import pyttsx3
 import playsound
 from gtts import gTTS
 import os
-num =1
+from Features.csv_writer import append_data
+
 def speak(audio):
     engine = pyttsx3.init('sapi5') #google API
     voices = engine.getProperty('voices')
@@ -13,7 +14,10 @@ def speak(audio):
     print(f"A.I : {audio}")
     engine.say(text = audio)
     engine.runAndWait()
+    append_data("logs\speak_logs.csv", "A.I", audio)
     print(" ")
+    
+    
 # from gtts import gTTS
 # from playsound import playsound
 

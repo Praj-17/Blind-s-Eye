@@ -7,6 +7,7 @@
 
 # This is a simple example for a custom action which utters "Hello World!"
 
+from tokenize import Name
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -30,6 +31,7 @@ from inference.video_classifier import face_recongizer
 from Features.speak import speak
 from Features.listen import listen
 from Features.main_face import create_training_image_folder
+from Features.csv_writer import prev_response
 import os
 Config.KEEP_ALIVE_TIMEOUT = 60
 Config.KEEP_ALIVE = False
@@ -53,6 +55,14 @@ def dict_to_word(dict):
     for key, value in dict.items():
         word += key + ": " + value + " "
     return word
+def train_new_face():
+    speak("Please provide a name")
+    name = input('Enter your name \n')
+    name_final = name.replace(" ", "_")
+    create_training_image_folder(name_final, 10)
+    #Training the new images(will look for time constraints)
+    os.system('start cmd /k start\\face_training.cmd')
+    return  name
 class ActionHelloWorld(Action):
 
     def name(self) -> Text:
@@ -114,16 +124,16 @@ class ActionNavigation(Action):
             print("Direction: ", direction)
             dispatcher.utter_message(text=direction)
             print("Navigation Completed...")         
-class ActionWishme(Action):
+class ActionRepeat(Action):
 
     def name(self) -> Text:
-        return "action_wishme"
+        return "action_repeat"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-            print("Entered Wishme action")
-            dispatcher.utter_message(text=wishMe())
+            print("Entered Repeat action")
+            dispatcher.utter_message(text= prev_response('response','logs\speak_logs.csv'))
 
 class ActionFaceRecognition(Action):
 
@@ -141,20 +151,40 @@ class ActionFaceRecognition(Action):
             except Exception as e:
                 print("Exception: ", e)
             try:
-                if int(confidence) > 30:
+                if int(confidence) > 50:
                     if person == 'OTHERS':
                         speak('You seem new to me')
                         speak('Do you want to save your face?')
-                        user_choice = input('say "YES" or "NO"')
+                        user_choice = input('say "YES" or "NO"\n')
                         if user_choice.lower() == 'yes':
-                            speak("Please provide a name")
-                            name = input('Enter your name')
-                            create_training_image_folder(name, 10)
-                        #Training the new images(will look for time constraints)
-                            os.system('start cmd /k start\\face_training.cmd')
-                            dispatcher.utter_message(text = f'Thankyou {name}')
+                            try:
+                                train_new_face()
+                                speak( f'Thankyou {name}')
+                            except Exception as e:
+                                print('Exception: ', e)
                     else:
                         dispatcher.utter_message(text=person)
+                elif int(confidence) < 50 and int(confidence) > 25:
+                    if person == 'OTHERS':
+                        speak('You seem new to me')
+                        speak('Do you want to save your face?')
+                        user_choice = input('say "YES" or "NO" \n')
+                        if user_choice.lower() == 'yes':
+                            name =  train_new_face()
+                            speak(f'Thankyou {Name.lower().capitalize()}')
+                    else:
+                        speak('You look similar to ' + person.lower().capitalize() + ' Though I am not much sure')
+                        speak('Please tell me weather I am correct?')
+                        choice = input('Say "YES" or "NO"')
+                        if choice.lower() == 'YES':
+                            dispatcher.utter_message( f'Thankyou {person.lower().capitalize()}')
+                            #we can run an reinforcement model here
+                        else:
+                            train_new_face()
+                            name =  train_new_face()
+                            speak(f'Thankyou {person.lower().capitalize()}')
+                            
+                    
                 else:
                     dispatcher.utter_message('Unable to detect faces clearly')
             except Exception as e:

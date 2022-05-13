@@ -48,8 +48,8 @@ def append_data(file ,query, response):
 # append_data('data.csv', "agaga","agagag3")
 # append_data('data.csv', "agaga","agagag2")
 # append_data('data.csv', "agaga","agagag1")
-def prev_response(attribute):
-    data = pd.read_csv('data.csv')
+def prev_response(attribute,file):
+    data = pd.read_csv(file)
     (prev_attribute) = str(data.iloc[-1:][attribute])
     a =(list(prev_attribute.split(' '))[4]).split('\n')
     return a[0]

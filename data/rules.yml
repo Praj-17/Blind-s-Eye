@@ -49,10 +49,7 @@ rules:
   steps:
   - intent: navigation
   - action: action_navigation
-- rule: welcome user
-  conversation_start: true 
-  steps:
-   - action: action_wishme
+
 - rule: out of scope
   steps:
   - intent: out_of_scope
@@ -69,6 +66,11 @@ rules:
   steps:
   - intent: face_recognition
   - action: action_face_recognition
+- rule: action repeat the last message when asked
+  steps:
+  - intent: repeat
+  - action: action_repeat
+
   
 
   
