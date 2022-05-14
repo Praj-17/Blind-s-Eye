@@ -20,9 +20,11 @@ from Features.csv_writer import append_data
 from Features.time_checker import inactive
 import pandas as pd
 from Features.save_snapshot import SaveImageFromArray
+from Features.FaceRecognition import FaceRecognition
 coco_names = 'YOLO\coco.names'
 yolo_config = 'YOLO\yolov3.cfg'
 yolo_weights = 'YOLO\yolov3.weights'
+
 
 
 
@@ -152,6 +154,9 @@ def object_detection():
             cv2.putText(frame, text_box_current, (x_min, y_min - 5),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.5, colour_box_current, 2)
             
+            
+            SaveImageFromArray(frame, "logs/object_detect_images")
+            
             #________________Our_Additions________________________________
             if predictions[-1] != labels[int(class_numbers[i])]:
                 predictions.append(labels[int(class_numbers[i])])
@@ -160,6 +165,7 @@ def object_detection():
                 
                 if labels[int(class_numbers[i])] in labels_person:
                     print("Going for face Recognition")
+                    FaceRecognition()
                 print("Detected Object:", predictions[-1])
                 
                 

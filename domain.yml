@@ -172,5 +172,5 @@ actions:
   - action_face_recognition
   - action_repeat
 session_config:
-  session_expiration_time: 120
+  session_expiration_time: 1200
   carry_over_slots_to_new_session: true
