@@ -92,14 +92,14 @@ nlu:
 
 - intent: chitchat/casual_query
   examples: |
-    - how are you?
-    - how is it going?
+    - how are you ?
+    - how is it going ?
     - what is up ?
     - is everything all right?
     - what is going on ?
     - you fine?
     - you all right?
-    - how is it going on 
+    - how is it going on ?
     - what are you doing ?
     - wattcha doing?
     - what are you up to?
