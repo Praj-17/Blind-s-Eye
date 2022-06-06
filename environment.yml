@@ -1,4 +1,4 @@
-name: bss
+name: bots
 channels:
   - defaults
 dependencies:
