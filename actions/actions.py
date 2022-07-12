@@ -380,11 +380,17 @@ class ActionText(Action):
         print("Entered the Text action")
         try:
             text = text_detector(get_image())
+            print("Text: ", text)
+            if text == "":
+                text = None
         except Exception as e:
             text = "None"
             print("Exception: ", e)
-            print("Landmark detection failed...!!")
-        dispatcher.utter_message(text=f"Text: {text}")
+            print("Text Detection failed...!!")
+        if text != None or text != "" or text != "None":
+            dispatcher.utter_message(text=f"Text: {text}")
+        else:
+            dispatcher.utter_message(text="No text found")
         print("Text detection Completed")
             
             
