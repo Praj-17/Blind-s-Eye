@@ -66,7 +66,7 @@ def face_recongizer():
         # if cv2.waitKey(1) & 0xFF == ord('q'):
         #     break
         
-        status = inactive("logs\\face_recognition_data.csv", 10)
+        status = inactive("logs\\face_recognition_data.csv", 2)
         
     
     

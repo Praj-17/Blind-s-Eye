@@ -30,7 +30,7 @@ if choice == "yes":
                     print("Sending message now....")
                     r = requests.post("http://localhost:5005/webhooks/rest/webhook", json={"sender": sender, "message": user_message})
                     print("Bot: ", end = ' ')
-                    
+               
                     for i in r.json():
                         try:
                             bot_message = i["text"]
